@@ -1,0 +1,57 @@
+.hero {
+  background-color: hsl(217, 28%, 15%);
+  background-image: url("/images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  background-position: bottom;
+  img {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 4.8rem 0 12rem;
+    h1 {
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size: clamp(3.2rem, 5vw, 4rem);
+      line-height: clamp(3.6rem, 5vh, 6rem);
+      max-width: 734px;
+    }
+    p {
+      text-align: center;
+      font-size: clamp(1.4rem, 5vw, 2rem);
+      line-height: clamp(2.1rem, 5vh, 3rem);
+      max-width: 589px;
+    }
+    a {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #ffffff;
+      padding: 1.9rem 9.6rem;
+      display: inline-block;
+      background: linear-gradient(134.79deg, #63e1d9 -42.11%, #34a0cd 100%);
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+      border-radius: 24px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      @media screen and (max-width: 320px) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 7.9rem 0 15.1rem;
+    }
+  }
+}

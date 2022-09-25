@@ -282,7 +282,7 @@ header {
   position: relative;
 }
 .threecol ::before {
-  content: url("./images/bg-quotes.png");
+  content: url("../images/bg-quotes.png");
   position: absolute;
   top: -35px;
   left: -12px;
